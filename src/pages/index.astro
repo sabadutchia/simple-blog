@@ -12,9 +12,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body >
 		<Header />
-		<main>
+		<main transition:animate="slide">
 			<h1><Astronaut client:idle/> Hello, Astronaut!</h1>
 			<Counter client:idle/>
 			<p>
